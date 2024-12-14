@@ -3,7 +3,7 @@ name: Hola mundo Jhon
 on:
   push:
     branches:
-      - main
+      - main2
 
 jobs:
   say-hello:

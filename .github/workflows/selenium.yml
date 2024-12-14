@@ -30,7 +30,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python -m pip install selenium
+        pip install -rSelenimumhooks/test/requirements.txt
     - name: Run Unit Test
       run: |
         python -m unittest discover -s Selenimumhooks/test
