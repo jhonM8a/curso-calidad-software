@@ -26,6 +26,6 @@ jobs:
         python -m pip install selenium
     - name: Run Unit Test
       run: |
-        python -m unittest discover -s Selenimunmhooks
+        python -m unittest discover -s Selenimumhooks
     - name: Ready for deploy
       run: echo "Listo"
