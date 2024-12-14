@@ -37,8 +37,10 @@ jobs:
         sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional
         
     - name: Run Unit Test
+      env:
+        DISPLAY: ":99"  # Required for the Xvfb virtual display    
       run: |
         python -m unittest discover -s Selenimumhooks/test
-        
+
     - name: Ready for deploy
       run: echo "Listo"
